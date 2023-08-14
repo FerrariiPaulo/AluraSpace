@@ -1,35 +1,36 @@
-import styles from "./menu.module.scss"
-import home from "../../assets/home-ativo.png"
-import curtidas from "../../assets/mais-curtidas-inativo.png"
-import views from "../../assets/mais-vistas-inativo.png"
-import novas from "../../assets/novas-inativo.png"
-import supreenda from "../../assets/surpreenda-me-inativo.png"
+import React from 'react'
+import home from "../../assets/icones/home-ativo.png"
+import maisCurtidas from "../../assets/icones/mais-curtidas-inativo.png"
+import maisVistas from "../../assets/icones/mais-vistas-inativo.png"
+import novas from "../../assets/icones/novas-inativo.png"
+import surpreendaMe from "../../assets/icones/surpreenda-me-inativo.png"
+import styles from './menu.module.scss';
 
 export default function Menu() {
   return (
     <nav className={styles.menu}>
-        <ul className={styles.meunu__lista}>
-            <li className={styles.menu__item}>
-                <img src={home} alt="home" />
-                <a href="/">Início</a>
-            </li>
-            <li className={styles.menu__item}>
-                <img src={curtidas} alt= "Mais curtidas" />
-                <a href="/">Mais curtidas</a>
-            </li>
-            <li className={styles.menu__item}>
-                <img src={views} alt="Mais vistas" />
-                <a href="/">Mais vistas</a>
-            </li>
-            <li className={styles.menu__item}>
-                <img src={novas} alt="Novas" />
-                <a href="/">Novas</a>
-            </li>
-            <li className={styles.menu__item}>
-                <img src={supreenda} alt="Surpeenda-me" />
-                <a href="/">Supreenda-me</a>
-            </li>
-        </ul>
+      <ul className={styles.menu__lista}>
+        <li className={styles.menu__item}>
+          <img src={home} alt="" />
+          <a href="/">Início</a>
+        </li>
+        <li className={styles.menu__item}>
+          <img src={maisCurtidas} alt="" />
+          <a href="/">Mais curtidas</a>
+        </li>
+        <li className={styles.menu__item}>
+          <img src={maisVistas} alt="" />
+          <a href="/">Mais vistas</a>
+        </li>
+        <li className={styles.menu__item}>
+          <img src={novas} alt="" />
+          <a href="/">Novas</a>
+        </li>
+        <li className={styles.menu__item}>
+          <img src={surpreendaMe} alt="" />
+          <a href="/">Surpreenda-me</a>
+        </li>
+      </ul>
     </nav>
   )
 }
